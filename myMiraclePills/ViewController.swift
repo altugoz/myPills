@@ -12,7 +12,27 @@ class ViewController: UIViewController,  UIPickerViewDataSource, UIPickerViewDel
     
     @IBOutlet weak var statePickerBtn: UIButton!
     @IBOutlet weak var statePicker: UIPickerView!
+    @IBOutlet weak var countrLabel: UITextField!
+    @IBOutlet weak var zipCodeLabel: UILabel!
+    @IBOutlet weak var sucessImage: UIImageView!
+    @IBOutlet weak var miraclePills: UILabel!
+    @IBOutlet weak var miraclePillImage: UIImageView!
+    @IBOutlet weak var dollarBill: UILabel!
+    @IBOutlet weak var fullName: UILabel!
+    @IBOutlet weak var enterYourNameLabel: UITextField!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var addressTextField: UITextField!
     
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var stateText: UITextField!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var countryTextField: UITextField!
+
+    @IBOutlet weak var justACode: UILabel!
+    
+    @IBOutlet weak var zipCodeTextField: UITextField!
     
     
 
@@ -30,8 +50,19 @@ class ViewController: UIViewController,  UIPickerViewDataSource, UIPickerViewDel
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buyNowButton(_ sender: AnyObject) {
+        sucessImage.isHidden = false
+        countrLabel.isHidden = true
+        miraclePills.isHidden = true
+        justACode.isHidden = true
+    }
+    
+    
     @IBAction func pickerButtonPressed(_ sender: AnyObject) {
         statePicker.isHidden = false
+        countrLabel.isHidden = true
+        zipCodeLabel.isHidden = true
+        
 
     }
     
